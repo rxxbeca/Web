@@ -1,0 +1,260 @@
+/*geral*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #444;
+    transition: 0.4s;
+}
+
+a:hover{
+    color: #37a1f7;
+}
+
+
+/* Estilo do Header */
+header {
+    background-color: #24252a;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+/* Estilo da barra de navegação */
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; /* Garante que a barra ocupe a largura total */
+    max-width: 1200px; /* Define um limite máximo para centralizar */
+}
+
+/* Estilo do logo */
+.logo h1 {
+    color: #fff;
+}
+
+/* Estilo da lista de navegação */
+.nav-list ul {
+    display: flex;
+    list-style-type: none;
+}
+
+/* Estilo para os itens de navegação */
+.nav-item {
+    margin: 0 15px;
+}
+
+.nav-item a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.15rem;
+}
+
+/* Botão "Entrar" (visível apenas na versão desktop) */
+.login-button button {
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #0187a7;
+}
+
+.login-button button a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+/* Ícone de Menu Mobile */
+.mobile-menu-icon {
+    display: none;
+    cursor: pointer;
+}
+
+/* Menu Mobile - inicialmente escondido */
+.mobile-menu {
+    display: none;
+}
+
+/*conteudo principal*/
+.container {
+    display: flex;
+    padding: 2rem 2.5rem;
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#posts-container {
+    flex: 3 1 2;
+}
+
+.post {
+    margin-bottom: 2.5rem;
+}
+
+.post img {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.title,
+.description,
+.author {
+    margin-bottom: 1rem;
+}
+
+.title {
+    font-size: 2rem;
+}
+
+.author {
+    columns: #333;
+    font-weight: bold;
+}
+
+/*barra lateral*/
+#search {
+    flex: 1 1 0;
+}
+
+#search-bar,
+#categories,
+#tags {
+    margin-bottom: 1.5rem;
+    border: 1px solid #ddd;
+    padding: 1.5rem;
+}
+
+#search-bar h4,
+#categories h4,
+#tags h4 {
+    margin-bottom: 1.5rem;
+    font-size: 1.6rem;
+}
+
+#search-bar form {
+    display: flex;
+}
+
+#search-bar input {
+    padding: 0.5rem 1rem;
+    border: 1px solid #ddd;
+}
+
+#search-bar input[type="submit"] {
+    cursor: pointer;
+    background-color: #37a1f7;
+    color: #fff;
+    border: none;
+}
+
+#categories li {
+    margin-bottom: 1rem;
+}
+
+#tags-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+#tags-container a {
+    background-color: #ddd;
+    padding: 0.5rem 0.7rem;
+    border-radius: 0.3rem;
+}
+
+/*rodapé*/
+#footer {
+    border-top: 2px solid #ddd;
+    padding: 3rem;
+    text-align: center;
+}
+
+#footer h2,
+#footer p {
+    margin-bottom: 1rem;
+    color: #24252a;
+}
+
+/* Responsividade: Quando a tela for menor ou igual a 730px */
+@media (max-width: 730px) {
+    .nav-list {
+        display: none;
+    }
+
+    /* Ícone de Menu Mobile */
+.mobile-menu-icon {
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    right: 0; /* Alinha no canto direito */
+}
+
+.mobile-menu-icon img {
+    width: 30px;
+    height: auto;
+    right: 0;
+}
+
+/* Menu Mobile - inicialmente escondido */
+.mobile-menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: #24252a;
+    padding: 20px 0;
+    position: absolute;
+    top: 60px; /* Ajuste conforme a altura do header */
+    right: 0; /* Menu aparece alinhado à direita */
+    width: 100%;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.mobile-menu .nav-item {
+    margin-bottom: 10px;
+}
+
+.mobile-menu .nav-item a {
+    color: white;
+    font-size: 1.2rem;
+}
+
+/* Quando o checkbox está marcado, exibe o menu */
+#menu-toggle:checked ~ .mobile-menu {
+    display: flex;
+}
+}
+
+/* Responsividade */
+@media (max-width: 730px) {
+    .nav-list {
+        display: none;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+    }
+
+    /* Esconde o botão "Entrar" na versão mobile */
+    .login-button {
+        display: none;
+    }
+
+    .container {
+        flex-wrap: wrap;
+    }
+}

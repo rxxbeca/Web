@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moysés Israel</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <!-- Logo -->
+            <div class="logo">
+                <h1>Ita em foco</h1>
+            </div>
+
+            <!-- Lista de navegação principal -->
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="#">Início</a></li>
+                    <li class="nav-item"><a href="#">Projetos</a></li>
+                    <li class="nav-item"><a href="#">Sobre</a></li>
+                </ul>
+            </div>
+
+            <!-- Botão Entrar (visível apenas na versão desktop) -->
+            <div class="login-button">
+                <button><a href="#">Entrar</a></button>
+            </div>
+
+        </nav>
+
+        <!-- Menu que aparece em telas pequenas -->
+        <div class="mobile-menu-icon">
+            <label for="menu-toggle">
+                <img src="img/white-hamburger-menu-icon-24.jpg" alt="Menu">
+            </label>
+        </div>
+        <input type="checkbox" id="menu-toggle" style="display: none;">
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="#">Início</a></li>
+                <li class="nav-item"><a href="#">Projetos</a></li>
+                <li class="nav-item"><a href="#">Sobre</a></li>
+            </ul>
+        </div>
+    </header>
+    
+    <!--CONTAINER-->
+    <div class="container">
+        <main id="posts-container">
+
+            <!--UM ARTIGO-->
+            <article class="post">
+                <h1 style="font-size: 3rem;">Moysés Banarrós Israel</h1>
+                <img src="img/biografia.jpg" alt="Moysés Banarrós Israel com livro na mão">
+                <h3 class="title"><a href="#">Biografia</a></h3>
+                <p class="description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Qui quo eligendi animi officiis a corrupti asperiores veniam
+                    natus perspiciatis? Minima quaerat consequatur harum tenetur
+                    officiis repudiandae incidunt accusantium eius rerum?
+                </p>
+                <p class="author"> Por: Rebeca Xavier</p>
+                <a href="#">Ler mais</a>
+            </article>
+
+            <!--OUTRO ARTIGO-->
+            <article class="post">
+                <img src="img/memoralia.jpg" alt="Antiga casa de Moysés Israel na UFAM">
+                <h3 class="title"><a href="#">Memorália da UFAM</a></h3>
+                <p class="description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Qui quo eligendi animi officiis a corrupti asperiores veniam
+                    natus perspiciatis? Minima quaerat consequatur harum tenetur
+                    officiis repudiandae incidunt accusantium eius rerum?
+                </p>
+                <p class="author"> Por: Rebeca Xavier</p>
+                <a href="#">Ler mais</a>
+            </article>
+
+            <!--MAIS UM ARTIGO-->
+            <article class="post">
+                <img src="img/uea.jpeg" alt="Frente da Universidade do Estado do Amazonas">
+                <h3 class="title"><a href="#">Doação para a Universidade do Estado do Amazonas (UEA) </a></h3>
+                <p class="description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Qui quo eligendi animi officiis a corrupti asperiores veniam
+                    natus perspiciatis? Minima quaerat consequatur harum tenetur
+                    officiis repudiandae incidunt accusantium eius rerum?
+                </p>
+                <p class="author"> Por: Rebeca Xavier</p>
+                <a href="#">Ler mais</a>
+            </article>
+
+            <!--MAIS UM ARTIGO-->
+            <article class="post">
+                <img src="img/cetam.jpg" alt="CETAM-Itacoatiara visto de cima">
+                <h3 class="title"><a href="#">Doação para o Centro de Educação Tecnológica do Amazonas (CETAM) </a></h3>
+                <p class="description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Qui quo eligendi animi officiis a corrupti asperiores veniam
+                    natus perspiciatis? Minima quaerat consequatur harum tenetur
+                    officiis repudiandae incidunt accusantium eius rerum?
+                </p>
+                <p class="author"> Por: Rebeca Xavier</p>
+                <a href="#">Ler mais</a>
+            </article>
+
+            <!--MAIS UM ARTIGO-->
+            <article class="post">
+                <img src="img/f3.jpg" alt="balões">
+                <h3 class="title"><a href="#">Doação para o Centro Social Chico Xavier</a></h3>
+                <p class="description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Qui quo eligendi animi officiis a corrupti asperiores veniam
+                    natus perspiciatis? Minima quaerat consequatur harum tenetur
+                    officiis repudiandae incidunt accusantium eius rerum?
+                </p>
+                <p class="author"> Por: Rebeca Xavier</p>
+                <a href="#">Ler mais</a>
+            </article>
+        </main>
+
+            <!--SESSÃO DE BUSCAS-->
+        <aside id="search">
+            <section id="search-bar">
+                <h4>Busca</h4>
+                <form>
+                    <input type="text" placeholder="Pesquise no blog">
+                    <input type="submit" value="Buscar">
+                </form>
+            </section>
+
+                <!--SESSÃO DE CATEGORIAS-->
+            <section id="categories">
+                <h4>Categorias</h4>
+                <nav>
+                    <ul>
+                        <li><a href="#">Paisagens</a></li>
+                        <li><a href="#">Aventura</a></li>
+                        <li><a href="#">Viagens longas</a></li>
+                        <li><a href="#">Florestas</a></li>
+                        <li><a href="#">Cachoeira</a></li>
+                    </ul>
+                </nav>
+            </section>
+
+            <!--SESSÃO DE TAGS-->
+            <section id="tags">
+                <h4>Tags</h4>
+                    <div id="tags-container">
+                        <a href="#">Trilha</a>
+                        <a href="#">Viagens</a>
+                        <a href="#">escalada</a>
+                        <a href="#">tirolesa</a>
+                        <a href="#">barco</a>
+                    <div>
+            </section>
+        </aside>
+    </div>
+
+        <!--rodapé-->
+        <footer id="footer">
+            <h2>Blog</h2>
+            <p>Os melhores registros de aventura</p>
+            <p>2025 &copy; Rebeca Xavier</p>
+        </footer>
+</body>
+</html>
