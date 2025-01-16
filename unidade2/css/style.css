@@ -1,0 +1,35 @@
+/* 4 - external css */
+h3{
+    color: green;
+}
+
+p{
+    color: red;
+}
+
+/*Exemplo 6 - classes*/
+.Paragrafo{
+    background-color: black;
+    color: aqua;
+    padding: 5px;
+}
+
+/*Exemplo 7*/
+#titulo-exclusivo{
+    background-color: purple;
+    color: white;
+    padding: 10px;
+}
+
+/*Exemplo 8 - ordem de regras*/
+h2{
+    border-bottom: 2px solid red;
+}
+
+.titulo{
+    border-bottom: 2px solid blue;
+}
+
+#algum-titulo{
+    border-bottom: 2px solid green;
+}

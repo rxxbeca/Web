@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamento CSS</title>
+
+    <!--3 - internal css-->
+    <style>
+        p{
+            color: gold;
+            font-size: 70px;
+        }
+
+    </style>
+
+    <!--4 - external css-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--meu teste-->
+    <link rel="stylesheet" href="css/title.css">
+
+</head>
+
+<body>
+    <!--1 - inline CSS-->
+    <h1 style="color: blue;">Mudar cor com inline</h1>
+
+    <!--2 - Múltiplas regras-->
+    <h1 style="color: rgb(255, 0, 93); font-size: 50px;">Mudar cor e tamanho da fonte</h1>
+
+    <!--3 - internal css-->
+    <p>E fui estilizado pelo internal css</p>
+
+    <!-- 4 - external css-->
+    <h3> Meu titulo verde</h3>
+
+    <!--5 - ordem css-->
+    <p style="color: rebeccapurple">Ordem css</p>
+    <p>este é mais um parágrafo</p>
+    <!--entre internal e external, o ultimo se sobressai-->
+    
+    <!--meu teste-->
+    <h4>Desafio 2</h4>
+
+    <!--6 - classes-->
+    <p class="Paragrafo">Algum texto</p>
+    <p class="Paragrafo">mais texto</p>
+    <p class="Paragrafo">outro texto</p>
+
+    <!--7 - ID--> <!--utilizar id para dar destaque-->
+    <h1 id="titulo-exclusivo">Este é um título com ID</h1>
+
+    <!--8 - multiplas regras, ordem do css (id, classe)-->
+    <h2 id="algum-titulo" class="titulo">Algum texto 1</h2>
+    <h2 class="titulo">Algum texto 2</h2>
+    <h2>Algum texto 3</h2>
+
+
+
+</body>
+</html>
